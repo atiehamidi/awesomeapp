@@ -1,24 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ArticleCard
+        image="https://coding.images/react.jpg"
+        title="What is React all about?"
+        description="React is all about one-way data flow, the Virtual DOM, and transpiling JSX."
+      />
+      <ArticleCard
+        image="https://animal.images/kid.jpg"
+        title="A lovely kid"
+        description="In fact, a kid is also the name of a baby goat!"
+      />
+      <ArticleCard
+        image="https://another.nonexistent/image.jpg"
+        title="On placeholder image URLs"
+        description="So yeah, you won't be able to look these images up. They're placeholders"
+      />
     </div>
   );
 }
